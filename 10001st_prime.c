@@ -15,10 +15,9 @@ int is_prime(num){
   return result;
 }
 
-int ten001st_prime(){
+int ten001st_prime(int upper_bound){
   int number;
   int counter = 0;
-  int upper_bound = 10001;
 
   for (number = 2; counter < upper_bound; ++number){
     if(is_prime(number)){
@@ -31,5 +30,5 @@ int ten001st_prime(){
 }
 
 int main(){
-  return ten001st_prime();
+  return ten001st_prime(10001);
 }
